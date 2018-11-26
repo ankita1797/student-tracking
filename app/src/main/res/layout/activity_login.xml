@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/rounded_rectangle"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+            <ImageView
+                android:id="@+id/imageView"
+                android:src="@drawable/minoricon"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingTop="10dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="2.50"></ImageView>
+
+            <TextView
+                android:id="@+id/input_memType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_below="@id/imageView"
+                android:inputType="number"
+                android:hint="Member Type"
+                android:textSize="20sp"/>
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_below="@+id/input_memType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <RadioButton
+                    android:id="@+id/rbwarden"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:text="Warden"
+                    android:textSize="15sp"
+                    
+                    />
+                <RadioButton
+                    android:id="@+id/rbstudent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="20dp"
+                    android:checked="true"
+                    />
+
+            </RadioGroup>
+            
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/inputenrollment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/radiogroup"
+                android:hint="Enrollment" />
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/password"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:layout_below="@id/inputenrollment"
+                android:hint="Password" />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password"
+                android:contentDescription="@string/app_name"/>
+
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/captcha"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/image"
+                android:hint="Captcha"
+                android:textSize="18sp" />
+
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_below="@id/captcha"
+                android:padding="12dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:text="Login"/>
+
+        <TextView android:id="@+id/signup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/btn_login"
+            android:text="Not a member? Sign Up"
+            android:gravity="center"
+            android:textSize="16dip"/>
+        <TextView android:id="@+id/forgetpassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="24dp"
+            android:layout_below="@id/signup"
+            android:text="Forget Password"
+            android:gravity="center"
+            android:textSize="16dip"/>
+
+
+
+        </RelativeLayout>
+</ScrollView>
+    </RelativeLayout>
+

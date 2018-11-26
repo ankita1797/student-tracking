@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "781359851160",
+    "firebase_url": "https://studenttracking-b2875.firebaseio.com",
+    "project_id": "studenttracking-b2875",
+    "storage_bucket": "studenttracking-b2875.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:781359851160:android:8263827130111e6d",
+        "android_client_info": {
+          "package_name": "com.example.ankita.studenttracking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "781359851160-eb3dkrmet7q2tiv25l70ojmu68k82fct.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtiS7Ey9Mv_yQ5ffawzfZ9N6IQldxmVU8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

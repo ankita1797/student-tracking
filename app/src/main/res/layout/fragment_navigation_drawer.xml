@@ -1,0 +1,68 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/nav_header_container"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:src="@drawable/minoricon"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/tv_hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi!"
+            android:layout_margin="10dp"
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/tv_hellouser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username "
+            android:textColor="@color/colorRed"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_below="@+id/tv_hello"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <View
+        android:id="@+id/footer_line"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/Black"
+        android:alpha="0.20"
+        android:layout_below="@+id/nav_header_container"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/drawerList"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/footer_line" />
+
+
+
+
+</RelativeLayout>

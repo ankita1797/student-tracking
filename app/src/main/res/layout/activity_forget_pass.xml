@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_first"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_rectangle">
+
+    <RadioGroup
+        android:id="@+id/radiogroupfgp"
+        android:layout_below="@+id/input_memType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/rbwardenfgp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Warden"
+            android:textSize="15sp"
+
+            />
+        <RadioButton
+            android:id="@+id/rbstudentfgp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            />
+
+    </RadioGroup>
+    <EditText
+        android:id="@+id/usernamefgp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/radiogroupfgp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:layout_margin="20dp"
+        android:background="#ffffff"/>
+
+    <TextView
+        android:id="@+id/tvfgp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter the otp which has been sent to your registered email id."
+        android:layout_below="@+id/usernamefgp"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/otp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tvfgp"
+        android:inputType="number"
+        android:layout_margin="20dp"
+        android:background="#ffffff"
+        android:hint="Enter otp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/getOTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate OTP"
+        android:layout_below="@+id/usernamefgp"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/submitOTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit OTP"
+        android:layout_below="@+id/otp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+
+        />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Username"
+        android:layout_below="@+id/submitOTP"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:layout_margin="20dp"
+        android:visibility="gone"
+        android:background="#ffffff"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Password"
+        android:layout_below="@+id/username"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:visibility="gone"
+        android:textColorHint="#000000"
+        android:layout_margin="20dp"
+        android:background="#ffffff"/>
+
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Re-Enter Password"
+        android:layout_below="@+id/password"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:layout_margin="20dp"
+        android:visibility="gone"
+        android:background="#ffffff"/>
+
+    <Button
+        android:id="@+id/changePass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        android:visibility="gone"
+
+        android:layout_below="@+id/repassword"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>

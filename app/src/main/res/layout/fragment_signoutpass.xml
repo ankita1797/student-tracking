@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/blackbackground"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_signputpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:text="Fill in the details below for signing an \n                            outpass. \n              All fields are mandatory!"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"/>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/sgnoplayoutenrollment"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_below="@id/tv_signputpass"
+                android:layout_marginTop="10dp">
+            <EditText
+                 android:id="@+id/sgnopenrollment"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:inputType="number"
+                 android:hint="Enrollment" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/sgnoplayoutroom"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_below="@id/sgnoplayoutenrollment"
+                android:layout_marginTop="10dp">
+                <EditText
+                    android:id="@+id/sgnoproom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="Room Number" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/sgnoplayoutaddress"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_below="@id/sgnoplayoutroom"
+                android:layout_marginTop="10dp">
+            <EditText
+                android:id="@+id/sgnopaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPostalAddress"
+                android:hint="Address" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/sgnoplayoutreason"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_below="@id/sgnoplayoutaddress"
+                android:layout_marginTop="10dp">
+            <EditText
+                android:id="@+id/sgnopreason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Reason for leaving" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/sgnoplayoutphone"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_below="@id/sgnoplayoutreason"
+                android:layout_marginTop="10dp">
+            <EditText
+                 android:id="@+id/sgnopphone"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:inputType="number"
+                 android:hint="Phone number where available"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/sgnoplayoutldate"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_below="@id/sgnoplayoutphone"
+                android:layout_marginTop="10dp">
+            <EditText
+                android:id="@+id/sgnopldate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:hint="Leaving Date (dd/mm/yyyy)"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/sgnoplayoutrdate"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_below="@id/sgnoplayoutldate"
+                android:layout_marginTop="10dp">
+                <EditText
+                android:id="@+id/sgnoprdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:hint="Returning Date (dd/mm/yyyy)"/>
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:id="@+id/sgnopbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/sgnoplayoutrdate"
+                android:padding="12dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:text="Click to proceed"/>
+
+
+
+</RelativeLayout>
+</ScrollView>
+
+    </RelativeLayout>

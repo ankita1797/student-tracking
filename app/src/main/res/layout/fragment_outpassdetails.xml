@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:id="@+id/layout_manageop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+        <TextView
+            android:id="@+id/addressop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PLACE:"
+            android:textColor="@color/Black"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/leavingdateop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/addressop"
+            android:text="LEAVING DATE: "
+            android:textColor="@color/Black"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/returningdateop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/leavingdateop"
+            android:textColor="@color/Black"
+            android:text="RETURNING DATE: "
+            android:textStyle="bold"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/reasonopd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/returningdateop"
+            android:textColor="@color/Black"
+            android:text="REASON: "
+            android:textStyle="bold"
+            android:textSize="15sp"
+            />
+
+
+        <TextView
+            android:id="@+id/addressfetch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:textSize="15sp"
+            android:textColor="@color/White"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/addressop"
+            android:layout_toEndOf="@+id/addressop" />
+        <TextView
+            android:id="@+id/leavingdatefetch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Leaving Date"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/White"
+            android:textSize="15sp"
+            android:layout_below="@+id/addressop"
+            android:layout_toRightOf="@+id/leavingdateop"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/returningdatefetch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Returning Date"
+            android:textStyle="bold"
+            android:textColor="@color/White"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_below="@+id/leavingdateop"
+            android:layout_toRightOf="@+id/returningdateop"
+            android:layout_marginTop="10dp" />
+        <TextView
+            android:id="@+id/reasonfetch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Reason"
+            android:textStyle="bold"
+            android:textColor="@color/White"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_below="@+id/returningdateop"
+            android:layout_toRightOf="@+id/reasonopd"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="1dp"/>
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorRed"
+        android:layout_below="@+id/layout_manageop">
+
+    </View>
+</RelativeLayout>

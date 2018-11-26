@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+<RelativeLayout
+    android:id="@+id/layout_lv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+            <TextView
+                android:id="@+id/enrollmenttv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ENROLLMENT:"
+                android:textColor="@color/Black"
+                android:textSize="15sp"
+                android:layout_margin="10dp"
+                android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/roomtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ROOM:"
+        android:textColor="@color/Black"
+        android:layout_below="@+id/enrollmenttv"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/roomtv"
+                android:text="LOCATION: "
+                android:textColor="@color/Black"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                />
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/location"
+        android:text="LAST UPDATED: "
+        android:textColor="@color/Black"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        />
+
+            <TextView
+                android:id="@+id/enrollmentfetch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enrollment"
+                android:inputType="number"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:textColor="@color/White"
+                android:textSize="15sp"
+                android:layout_toRightOf="@+id/enrollmenttv"/>
+    <TextView
+        android:id="@+id/roomfetch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Room"
+        android:gravity="center"
+        android:textColor="@color/White"
+        android:textSize="15sp"
+        android:layout_below="@+id/enrollmenttv"
+        android:layout_toRightOf="@+id/location"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+    </TextView>
+
+
+            <TextView
+                android:id="@+id/locationfetch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Location"
+                android:gravity="center"
+                android:textColor="@color/White"
+                android:textSize="15sp"
+                android:layout_below="@+id/roomtv"
+                android:layout_toRightOf="@+id/location"
+                android:layout_margin="10dp"/>
+    <TextView
+        android:id="@+id/timefetch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Time"
+        android:gravity="center"
+        android:textColor="@color/White"
+        android:textSize="15sp"
+        android:layout_below="@+id/location"
+        android:layout_toRightOf="@+id/time"
+        android:layout_margin="10dp"/>
+
+
+
+</RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorRed"
+        android:layout_below="@+id/layout_lv">
+
+    </View>
+
+    </RelativeLayout>

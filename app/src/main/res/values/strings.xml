@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">StudentTracking</string>
+    <string name="action_log_out">Log out</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="nav_item_home">HOME</string>
+    <string name="nav_item_manageOutpass">MANAGE OUTPASS</string>
+    <string name="nav_item_signOutpass">SIGN OUTPASS</string>
+    <string name="nav_item_editProfile">OUTPASS DETAILS</string>
+
+
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_manageOutpass</item>
+
+
+
+    </string-array>
+    <string-array name="nav_drawer_labels1">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_signOutpass</item>
+        <item>@string/nav_item_editProfile</item>
+
+    </string-array>
+
+
+    <string name="title_messages">MESSAGES</string>
+    <string name="title_manageOutpass">MANAGE OUTPASS</string>
+    <string name="title_home">HOME</string>
+    <string name="title_editprofile">OUTPASS DETAILS</string>
+    <string name="title_signOutpass">SIGN OUTPASS</string>
+
+
+</resources>
